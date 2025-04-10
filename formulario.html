@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <style>
+        fieldset{
+            margin: 15px;
+            border-radius: 10px;
+            border-color: rgb(127, 255, 212);
+        }
+        legend{
+            font-size: 20px;
+            color: rgb(82, 160, 134);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form name="signup" method="post" action="#">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <div>
+                Nome: <input type="text" name="nome" />
+                Cpf: <input type="number" name="Cpf" /><br>
+            </div>
+            <div>
+                Idade: <input type="number" name="idade" min="0" max="99" />
+                Sexo: <input type="radio" name="sexo" value="masculino" />Masculino
+                <input type="radio" name="sexo" value="feminino" />Feminino<br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div>
+                Rua: <input type="text" name="rua" />
+                Número: <input type="number" name="numero" /><br>
+                Bairro: <input type="text" name="bairro" /><br>
+                Cidade: <input type="text" name="cidade" />
+                <br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                E-mail: <input type="email" name="email" /><br>
+                Senha: <input type="password" name="senha" />
+            </div>
+        </fieldset>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset" >Limpar Formulário</button><br>
+        <!--date: <input type="date" name="data" /><br>
+        range: <input type="range" name="range" min="0" max="100" /><br>
+        color: <input type="color" name="cor" /><br> -->
+    </form>
+</body>
+</html>
