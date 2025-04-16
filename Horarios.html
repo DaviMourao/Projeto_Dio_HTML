@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios de Atendimento</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        table {
+            -webkit-box-shadow: 12px 14px 6px 5px rgba(0, 0, 0, 0.24);
+            box-shadow: 12px 14px 6px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        
+        }
+        table thead th{
+            background-color: darkslategrey;
+            border: solid 1px black;
+            color:white
+        }
+        table tfoot td{
+            background-color: lightgray;
+            border: solid 1px black;
+            color:rgb(0, 0, 0)
+        }
+        table tbody tr:nth-child(1) td {
+            background-color: white;
+        }
+        table tbody tr:nth-child(3) td {
+            background-color: white;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: lightgray;
+        }
+        table tbody tr:hover td{
+            background-color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li style="margin-bottom: 10px"><a href="http://127.0.0.1:5500/template.html#">Página Principal</a></li>
+                <li style="margin-bottom: 10px"><a href="http://127.0.0.1:5500/Sobre%20a%20Clinica.html" > Sobre a Clínica</a></li>
+                <li style="margin-bottom: 10px"><a href="http://127.0.0.1:5500/Horarios.html#" >Horários de Atendimento</a></li>
+                <li style="margin-bottom: 10px"><a href="http://127.0.0.1:5500/Contato.html#" > Contato</a>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header" style="background-color: rgb(91, 115, 252);">
+                <div style="margin-left: 20px; ">
+                    <h1> <strong>Saúde Boa!</strong></h1>
+                    <h2>Sua saúde em boas mãos.</h2>
+                </div>
+                <img src="logos/customer-service.png" width="128px" length="128px" style="position: absolute; top: 10px; right:180px;">
+            </div>
+    
+            <div class="content" align="center">
+                <p>Clínica Geral: Atendimento médico abrangente para diagnóstico e tratamento de diversas condições de saúde, incluso cuidados primários e preventivos.<br>
+                    Psicologia: Suporte emocional e psicológico, incluindo terapia individual e acompanhamento para questões relacionadas à saúde mental.<br>
+                    Pediatria: Cuidados especializados para crianças e adolescentes, abrangendo consultas de rotina, vacinação e tratamento de doenças infantis.<br>
+                    Oftalmologia: Serviços voltados à saúde ocular, como exames de visão, diagnóstico e tratamento de problemas relacionados aos olhos.</p>
+                <h1>Horários de Atendimento</h1>
+                <table length="500" width="800" align="center" background-color="white" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th title="Atendimento"> Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <td>Clínica Geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr align="center">
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr align="center">
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td> - </td>
+                        </tr>
+                        <tr align="center">
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>    - </td>
+                        </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="footer">
+                <div style="text-align: right; position: fixed ; bottom: 100px; right: 180px;">
+                <h3> Siga nossas redes sociais: </h3>
+                <img src="logos/social-media.png" width="32px" length="32px" >  facebook 
+                <img src="logos/instagram.png" width="32px" length="32px" > instagram 
+                <img src="logos/business.png" width="32px" length="32px" > linkedin
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+  
